@@ -1,0 +1,72 @@
+:root {
+  --bg-1: #FFE8DF;
+  --bg-2: #FFD9CE;
+  --bg-3: #FFE4E9;
+  --cream: #FFF5EF;
+  --ink: #3A2A2A;
+  --ink-soft: #6B5858;
+  --muted: #9A8A86;
+  --magenta: #E6007E;
+  --turquoise: #00C4C4;
+  --sun: #FFB547;
+  --green: #74D99F;
+  --green-ink: #1F6B42;
+  --red: #FF8A8A;
+  --red-ink: #8A2A2A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 800px at 10% 0%, #FFDCD0 0%, transparent 55%),
+    radial-gradient(1000px 700px at 90% 20%, #FFE0EA 0%, transparent 50%),
+    radial-gradient(900px 700px at 50% 100%, #FFEFD9 0%, transparent 55%),
+    #FFF2EA;
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  60% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes confettiDrop {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate(var(--dx), 600px) rotate(var(--rot)); opacity: 0; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+}
