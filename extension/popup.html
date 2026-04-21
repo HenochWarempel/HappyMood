@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H-Structuur Checker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup">
+    <div class="popup-header">
+      <div class="popup-logo">H</div>
+      <div>
+        <div class="popup-title">H-Structuur Checker</div>
+        <div class="popup-sub">Heading-hiërarchie analyser</div>
+      </div>
+    </div>
+
+    <div class="popup-body">
+      <button class="toggle-btn" id="toggleBtn">
+        <span class="toggle-icon" id="toggleIcon">▶</span>
+        <span id="toggleLabel">Checker activeren</span>
+      </button>
+
+      <div class="shortcut-hint">
+        Sneltoets: <kbd>Alt</kbd> + <kbd>H</kbd>
+      </div>
+
+      <div class="info-box">
+        <div class="info-row">
+          <span class="info-dot dot-error"></span> Hiërarchiefouten
+        </div>
+        <div class="info-row">
+          <span class="info-dot dot-warn"></span> Waarschuwingen (bijv. meerdere H1's)
+        </div>
+        <div class="info-row">
+          <span class="info-dot dot-ok"></span> Correcte structuur
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-footer">
+      Klik op een heading in het paneel om er naartoe te scrollen
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
